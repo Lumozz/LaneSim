@@ -138,6 +138,7 @@ if __name__ == "__main__":
     car.x = 1
     car.y = 1.75
 
+    # 生成一辆车，让他按照1m/s**2的加速度行驶200个时间步（20s）
     for i in range(0, 200):
         car.step(1, 0)
         current_lane = road.which_lane(car)
